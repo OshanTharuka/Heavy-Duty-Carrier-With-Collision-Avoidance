@@ -1,0 +1,260 @@
+///////////////////////////////////////////////////////////////////////cam.html/////////////////////////////////////////////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .camfeed {
+           padding: 20px;
+           
+        }
+
+        .topic {
+            font-size: x-large;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 6px;
+            font-family: 'Helvetica';
+            font-weight: 700;
+            /* margin-left: 6px; */
+        }
+
+        .body {
+            padding: 0;
+            font-family: Arial;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .side-nav {
+            width: 300px;
+            height: 85vh;
+            font-size: 18px;
+            background-color: rgb(145, 145, 145);
+            -webkit-box-shadow: 6px 0px 19px -8px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 6px 0px 19px -8px rgba(0, 0, 0, 0.75);
+            box-shadow: 6px 0px 19px -8px rgba(0, 0, 0, 0.75);
+        }
+
+        .content {
+            width: 100%;
+            height: 85vh;
+            background-color: rgb(248, 248, 248);
+        }
+
+        .item{
+            padding: 12px;
+            color: white;
+            border-bottom: 1px solid whitesmoke;
+        }
+
+        .item:hover{
+            background-color: rgb(235, 233, 233);
+            color: black;
+        }
+
+        .title{
+            padding: 12px;
+            font-size: xx-large;
+            
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div class="topic">
+        <p>Live Feed Streamer</p>
+    </div>
+    <div class="container">
+        <div class="side-nav">
+            <div class="item">
+                Video Stream
+            </div>
+           
+            <div class="item">
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                Live Feed
+            </div>
+            <div class="camfeed">
+                <iframe src="http://192.168.8.100:8080/browserfs.html" style=" width: 800px; height:450px" ></iframe>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+
+
+</html>
+
+
+///////////////////////////////////////////////////////////////////////about.html/////////////////////////////////////////////////////////////////////////////////////////////
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            font-size: x-large;
+
+        }
+        .topic {
+            font-size: x-large;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 6px;
+            font-family: 'Helvetica';
+            font-weight: 700;
+            /* margin-left: 6px; */
+        }
+
+        .body {
+            padding: 0;
+            font-family: Calibri;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .side-nav {
+            width: 300px;
+            height: 85vh;
+            font-size: 18px;
+            background-color: rgb(145, 145, 145);
+            -webkit-box-shadow: 6px 0px 19px -8px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 6px 0px 19px -8px rgba(0, 0, 0, 0.75);
+            box-shadow: 6px 0px 19px -8px rgba(0, 0, 0, 0.75);
+        }
+
+        .content {
+            width: 100%;
+            height: 85vh;
+            background-color: rgb(248, 248, 248);
+            padding: 16px;
+        }
+
+        .item{
+            padding: 12px;
+            color: white;
+            border-bottom: 1px solid whitesmoke;
+        }
+
+        .item:hover{
+            background-color: rgb(235, 233, 233);
+            color: black;
+        }
+
+        .description{
+            padding: 12px;
+            line-height: 1.2;
+        }
+
+        .person{
+            padding: 36px;
+            width: 250px;
+        }
+
+        .image{
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+     
+        }
+
+        .section{
+            text-align: center;
+        }
+        .name{
+            font-size: xx-large;
+            line-height: 1.0;
+        }
+
+        .people{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div class="topic">
+        <p>Live Feed Streamer</p>
+    </div>
+    <div class="container">
+        <div class="side-nav">
+            <div class="item">
+               <a href="cam.html">Video Stream</a>
+            </div>
+           
+            <div class="item">
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                About Us
+            </div>
+            <div class="description">
+                We are SLIIT 3rd year Electrical and Electronic undergraduate students.As third year students we introduce Live Feed Streamer website to view Object Avoid and Line Following Robot's Camera View which we designed for our 3rd year project.
+            </div>
+
+            <div class="people">
+                <div class="person">
+                    <img class="image" src="https://dl3.pushbulletusercontent.com/eRfGfmH8dHCjP1vFCD5fsxVbNGLMyiLU/Screenshot_20200607_025623.jpg" alt="" srcset="">
+                    <div class="section">
+                        <p class="name">Nilanjan Fernando</p>
+                        <p class="des">Undergradutae</p>
+                    </div>
+                    
+                </div>
+                <div class="person">
+                    <img class="image" src="https://dl3.pushbulletusercontent.com/UWdfg67bLCqYhRX62OpkbKXhnole3rch/Screenshot_20200607_123513.jpg" alt="" srcset="">
+                    <div class="section">
+                        <p class="name">Kavisha Samarasinghe</p>
+                        <p class="des">Undergradutae</p>
+                    </div>
+                    
+                </div>
+                <div class="person">
+                    <img class="image" src="C:\Users\DELL\Desktop\Design project simulation files\Pro 4tos\IMG-20191128-WA0001.jpg" alt="" srcset="">
+                    <div class="section">
+                        <p class="name">Oshan Tharuka Waduge</p>
+                        <p class="des">Undergradutae</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+
+
+</html>

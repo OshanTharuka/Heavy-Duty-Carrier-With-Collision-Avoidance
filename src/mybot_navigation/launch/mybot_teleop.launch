@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- turtlebot_teleop_key already has its own built in velocity smoother -->
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard.py"  output="screen">
+    <param name="scale_linear" value="0.5" type="double"/>
+    <param name="scale_angular" value="1" type="double"/>
+    <remap from="/cmd_vel" to="/my_bot/base_controller/cmd_vel"/>
+  </node>
+</launch>
+
